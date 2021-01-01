@@ -1,0 +1,45 @@
+li .byline img.avatar,
+#l_holder {
+    display: none;
+}
+
+body {
+    background: #222;
+    color: #eee;
+}
+#header a.cur_url {
+    color: #fff;
+} 
+a {
+    color: #ddd;
+}
+a:visited {
+    color: #ccc;
+}
+li.story div.details span.link a:visited {
+    color: #aaa;
+}
+a:hover,
+a:focus {
+    color: #fff !important;
+}
+a.tag {
+    background-color: #555;
+    color: #ddd;
+    border: 1px solid #666; 
+}
+a.tag:hover,
+a.tag:focus {
+    color: #fff;
+    border: 1px solid #ddd;
+}
+span.user_is_author, a.user_is_author, li .byline a.user_is_author,
+span.new_user, a.new_user, li .byline a.new_user {
+    color: #eee;
+}
+span.user_is_author::before, a.user_is_author::before, li .byline a.user_is_author::before {
+    content: "(A) ";
+}
+span.new_user::after, a.new_user::after, li .byline a.new_user::after {
+   content: "*" ;
+}
